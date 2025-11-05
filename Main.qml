@@ -44,7 +44,62 @@ Window {
         color: "#FFFFFF"
     }
 
-    //中间按钮区域
+    //冷热选择区域
+    Rectangle {
+        id: hotAndCollSelectRect
+        width: parent.width
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            topMargin: 30
+            bottomMargin: 30
+        }
+        color: "transparent"
+
+        //热饮按钮
+        Rectangle {
+            id: hotBtnRect
+            width: parent.width * 0.5
+            anchors {
+                left: parent.left
+                // top: parent.top
+                // bottom: parent.bottom
+                verticalCenter: parent.verticalCenter
+            }
+            color: "transparent"
+            Image {
+                id: hotBtnImg
+                source: "UI/asset/hot-drink.png"
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    verticalCenter: parent.verticalCenter
+                }
+            }
+        }
+
+        //冷饮按钮
+        Rectangle {
+            id: coldBtnRect
+            width: parent.width * 0.5
+            anchors {
+                right: parent.right
+                // top: parent.top
+                // bottom: parent.bottom
+                verticalCenter: parent.verticalCenter
+            }
+            color: "transparent"
+            Image {
+                id: coldBtnImg
+                source: "UI/asset/cool-drink.png"
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    verticalCenter: parent.verticalCenter
+                }
+            }
+        }
+
+        //这里可以添加更多按钮或其他UI元素
+    }
 
     //底部横线
     Rectangle {

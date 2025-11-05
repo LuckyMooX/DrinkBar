@@ -16,6 +16,9 @@ qt_add_qml_module(appDrinkBar
     URI DrinkBar
     QML_FILES
         Main.qml
+    RESOURCES
+        README.md
+        RESOURCES UI/asset/cool-drink.png UI/asset/hot-drink.png
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
